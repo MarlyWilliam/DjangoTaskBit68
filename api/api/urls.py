@@ -4,5 +4,5 @@ from django.conf.urls import url, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('users/', include('users.urls'), name="user_endpoints")
+    path('', include('users.urls'))
 ]

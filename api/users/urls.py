@@ -1,8 +1,9 @@
 from django.urls import path
-from .views import UserCreateAPIView, login
+from .views import UserCreateAPIView, login, GetCityWatherView, my_django_view
 from rest_framework.authtoken import views
 
 urlpatterns = [
-    path('login/', login, name="login"),
-    path('register/', UserCreateAPIView.as_view(), name="register")
+    path('user/login/', login, name="login"),
+    path('user/register/', UserCreateAPIView.as_view(), name="register"),
+    path('weather/', GetCityWatherView.as_view(), name="get-city-weather")
 ]
