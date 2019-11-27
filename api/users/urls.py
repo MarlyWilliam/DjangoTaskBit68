@@ -1,6 +1,7 @@
 from django.urls import path
-from users import views
+from .views import login
+from rest_framework.authtoken import views
 
 urlpatterns = [
-    
+    path('login/', login, name="login")
 ]
