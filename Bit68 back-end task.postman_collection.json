@@ -1,0 +1,110 @@
+{
+	"info": {
+		"_postman_id": "cd324e66-7b8e-4107-9cd4-66a701b07dda",
+		"name": "Bit68 back-end task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"marly\",\n\t\"password\": \"marlymarly\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server_url}}/user/login/",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"user",
+						"login",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User Register",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"username\": \"marly\",\n\t\"email\": \"test@test.com\",\n\t\"password\": \"marlymarly\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{server_url}}/user/register/",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"user",
+						"register",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "City Weater",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token  a133e1a0b968a7a33ac6187b25e32d19b1ae1e22",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{server_url}}/weather/?city=cairo",
+					"host": [
+						"{{server_url}}"
+					],
+					"path": [
+						"weather",
+						""
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "cairo"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": []
+}
