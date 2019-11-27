@@ -8,7 +8,15 @@ from rest_framework.status import (
     HTTP_200_OK
 )
 from rest_framework.response import Response
+from rest_framework import generics
+from .serializers import UserSerializer
+from django.contrib.auth import get_user_model
 
+User = get_user_model()
+
+class UserCreateAPIView(generics.CreateAPIView):
+    queryset = User.objects.all()
+    serializer_class = UserSerializer
 
 @csrf_exempt
 @api_view(["POST"])
