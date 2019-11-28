@@ -1,0 +1,15 @@
+Backend Repository
+https://github.com/MarlyWilliam/DjangoTaskBit68.git
+
+Frontend Repository
+https://github.com/MarlyWilliam/CitiesWeatherAngular.git
+
+Postman Collection
+https://www.getpostman.com/collections/f66b3388b71684d59bfc
+
+Remote backend server link
+http://marlywilliam31.pythonanywhere.com/
+
+Frontend link
+http://ciitiesweather.000webhostapp.com/
+
