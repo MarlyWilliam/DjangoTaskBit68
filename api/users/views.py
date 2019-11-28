@@ -16,13 +16,6 @@ from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 import requests
 
-def my_django_view(request):
-    if request.method == 'GET':
-        r = requests.get('http://api.openweathermap.org/data/2.5/weather?q=Cairo&APPID=9173443ab2c336e365088e491039d802', params=request.GET)
-    if r.status_code == 200:
-        return HttpResponse('Yay, it worked')
-    return HttpResponse('Could not save data')
-
 User = get_user_model()
 
 class GetCityWatherView(APIView):

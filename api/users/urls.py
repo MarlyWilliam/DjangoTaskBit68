@@ -1,5 +1,5 @@
 from django.urls import path
-from .views import UserCreateAPIView, login, GetCityWatherView, my_django_view
+from .views import UserCreateAPIView, login, GetCityWatherView
 from rest_framework.authtoken import views
 
 urlpatterns = [
